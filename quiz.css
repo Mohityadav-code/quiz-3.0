@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1300px) {
+   .quizbox{
+    display: none;
+   }
+   .Formedia{
+    visibility: visible;
+   }
+}
+  
+
+  
