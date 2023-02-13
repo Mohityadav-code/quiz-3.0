@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <div class="flex mainbox blue-bg  justify-center items-center flex-col  bg-[#121212] w-full h-screen">
+    <div class=" max-md:h-full flex mainbox blue-bg  justify-center items-center flex-col  bg-[#121212] w-full h-screen">
         <div
-            class="white-bg  change-dark1 title flex  items-center justify-center text-[#979797]  bg-[#1e1e1e] rounded-lg h-[80px]  mt-4 text-5xl font-serif  w-[500px] ">
+            class=" max-md:w-full max-md:h-full max-sm:h-full  max-md:text-3xl white-bg  change-dark1 title flex  items-center justify-center text-[#979797]  bg-[#1e1e1e] rounded-lg h-[80px]  mt-4 text-5xl font-serif  w-[500px] ">
             Quiz Application UI</div>
 
 
@@ -61,42 +61,42 @@
 
             </div>
             <div class="flex items-center justify-center Boxes">
-                <div class="white-bg w-9/12 bg-[#1e1e1e]   change-dark1  h-[587px] ">
+                <div class="white-bg w-9/12 bg-[#1e1e1e] max-lg:w-full max-md:w-full text-sm   change-dark1  h-[587px] ">
                     <div
                         class="flex flex-col justify-center m-4 mt-6 text-black rounded-md shadow-md mango-bg shadow-slate-700/100 change-dark bg-zinc-600">
                         <div class="queNo">
                             <h1 id="quehere1" class="h-2 p-2 font-medium ">Question 1</h1>
                         </div>
                         <div class="p-2">
-                            <h1 class="flex items-center mt-2 question h-14" id="question">Loading...</h1>
+                            <h1 class="flex items-center mt-2 question h-14 max-md:h-auto max-sm:h-auto " id="question">Loading...</h1>
                         </div>
                     </div>
                     <div class="flex flex-col m-4 ">
                         <label>
                             <input class="w-0 h-0 opacity-0 answer " id="1" type="radio" name="Demo">
                             <button id="a"
-                                class="options items-center  border-[1px] border-zinc-600 border-solid   shadow-stone-300/50 hover:border-black hover:border-2 hover:border-solid rounded-md mt-1 pl-4  pt-1 pb-2 pr-4  change-dark  bg-zinc-600 text-white w-full h-12 opt flex flex-row ">
+                                class="options max-md:h-auto max-sm:h-auto justify-start  border-[1px] border-zinc-600 border-solid   shadow-stone-300/50 hover:border-black hover:border-2 hover:border-solid rounded-md mt-1 pl-4  pt-1 pb-2 pr-4  change-dark  bg-zinc-600 text-white w-full h-12 opt flex flex-row ">
                                 A
                             </button>
                         </label>
                         <label>
                             <input class="w-0 h-0 opacity-0 answer " id="2" type="radio" name="Demo">
                             <button id="b"
-                                class=" options items-center border-[1px] border-zinc-600 border-solid  shadow-stone-300/50 hover:border-black hover:border-2 hover:border-solid rounded-md mt-1 pl-4  pt-1 pb-2 pr-4  change-dark  bg-zinc-600 text-white w-full h-12 opt flex flex-row ">
+                                class=" options max-md:h-auto max-sm:h-auto justify-start border-[1px] border-zinc-600 border-solid  shadow-stone-300/50 hover:border-black hover:border-2 hover:border-solid rounded-md mt-1 pl-4  pt-1 pb-2 pr-4  change-dark  bg-zinc-600 text-white w-full h-12 opt flex flex-row ">
                                 B
                             </button>
                         </label>
                         <label>
                             <input class="opacity-0 answer " type="radio" id="3" name="Demo">
                             <button id="c"
-                                class="options items-center  border-[1px] border-zinc-600 border-solid shadow-stone-300/50 hover:border-black hover:border-2 hover:border-solid rounded-md mt-1 pl-4  pt-1 pb-2 pr-4  change-dark  bg-zinc-600 text-white w-full h-12 opt flex flex-row ">
+                                class="options max-md:h-auto max-sm:h-auto justify-start  border-[1px] border-zinc-600 border-solid shadow-stone-300/50 hover:border-black hover:border-2 hover:border-solid rounded-md mt-1 pl-4  pt-1 pb-2 pr-4  change-dark  bg-zinc-600 text-white w-full h-12 opt flex flex-row ">
                                 C
                             </button>
                         </label>
                         <label>
                             <input class="opacity-0 answer " id="4" type="radio" name="Demo">
                             <button id="d"
-                                class="options items-center  border-[1px] border-zinc-600 border-solid shadow-stone-300/50 hover:border-black hover:border-2 hover:border-solid rounded-md mt-1 pl-4  pt-1 pb-2 pr-4  change-dark  bg-zinc-600 text-white w-full h-12 opt flex flex-row ">
+                                class="options max-md:h-auto max-sm:h-auto justify-start  border-[1px] border-zinc-600 border-solid shadow-stone-300/50 hover:border-black hover:border-2 hover:border-solid rounded-md mt-1 pl-4  pt-1 pb-2 pr-4  change-dark  bg-zinc-600 text-white w-full h-12 opt flex flex-row ">
                                 D
                             </button>
                         </label>
@@ -107,21 +107,22 @@
                                 Prev</div>
                         </button><button onclick="clearResponse()">
                             <div
-                                class="shadow-md button-bg shadow-zinc-300/10 next rounded-md font-serif font-extralight bg-zinc-900 text-[#a2a2a2] pr-10 pl-10 mt-10  pt-2 pb-1  hover:bg-[#121212] active:bg-black focus:outline-none focus:ring focus:ring-red-300 ">
+                                class=" max-lg: max-md:hidden shadow-md button-bg shadow-zinc-300/10 next rounded-md font-serif font-extralight bg-zinc-900 text-[#a2a2a2] pr-10 pl-10 mt-10  pt-2 pb-1  hover:bg-[#121212] active:bg-black focus:outline-none focus:ring focus:ring-red-300 ">
                                 Clear Response</div>
                         </button><button onclick="markbutton()">
                             <div
-                                class="shadow-md button-bg shadow-zinc-300/10 next rounded-md font-serif font-extralight bg-zinc-900 text-[#a2a2a2] pr-10 pl-10 mt-10  pt-2 pb-1 hover:bg-[#121212] active:bg-black focus:outline-none focus:ring focus:ring-red-300 ">
+                                class=" max-lg: max-md:hidden shadow-md button-bg shadow-zinc-300/10 next rounded-md font-serif font-extralight bg-zinc-900 text-[#a2a2a2] pr-10 pl-10 mt-10  pt-2 pb-1 hover:bg-[#121212] active:bg-black focus:outline-none focus:ring focus:ring-red-300 ">
                                 Mark For Review</div>
                         </button><button onclick="nextbutton()" class="nextbutton">
                             <div
                                 class="shadow-md button-bg shadow-zinc-300/10 next rounded-md font-serif font-extralight bg-zinc-900 text-[#a2a2a2] pr-10 pl-10 mt-10  pt-2 pb-1 hover:bg-[#121212] active:bg-black focus:outline-none focus:ring focus:ring-red-300 ">
                                 Next</div>
                         </button></div>
-
+<div class="options max-md:h-auto max-sm:h-auto justify-start  border-[1px] border-zinc-600 border-solid shadow-stone-300/50 hover:border-black hover:border-2 hover:border-solid rounded-md mt-1 pl-4  pt-1 pb-2 pr-4  change-dark  bg-zinc-600 text-white w-full h-12 opt  flex-row ansbox  hidden "> Correct Ans is : </div>
                 </div>
+                
                 <div
-                    class="white-bg w-3/12  change-dark bg-[#1e1e1e]	 border-l-2 border-solid border-slate-500 h-[587px]">
+                    class="max-lg:hidden  max-md:hidden white-bg w-3/12  change-dark bg-[#1e1e1e]	 border-l-2 border-solid border-slate-500 h-[587px]">
                     <div
                         class="flex items-center justify-center mt-8 text-xl font-bold text-red-700 text-yellow-800 Time">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -249,7 +250,7 @@
                     </div> -->
                     <div></div>
                     <div class="review ">
-                        <div class="flex justify-start items-center pl-10 mt-3 flex-wrap text-[#a2a2a2]">
+                        <div class=" flex max-[1280px]:hidden justify-start items-center pl-10 mt-3 flex-wrap text-[#a2a2a2]">
                             <div class="flex flex-col items-center justify-center ">
                                 <div id="domAnswered"
                                     class="flex items-center justify-center w-8 h-8 mr-2 text-2xl text-white bg-green-400 border-2 border-green-400 border-solid rounded-t-full ">
@@ -290,10 +291,10 @@
             </div>
         </div>
     </div>
-    <div class="subPallete absolute top-0 h-full w-screen  backdrop-blur-sm ">
+    <div class="absolute top-0 hidden w-screen h-full subPallete backdrop-blur-sm ">
 
-        <div class="flex  justify-center   ">
-            <div class="flex flex-col w-8/12 mt-20 bg-teal-100 h-2/6 rounded-lg ">
+        <div class="flex justify-center ">
+            <div class="flex flex-col w-8/12 mt-20 bg-teal-100 rounded-lg h-2/6 ">
                 <div class="m-3 font-serif text-lg text-center submittitle">Submit your test</div>
                 <div class="flex flex-row items-center justify-around heading ">
                     <div class="w-full pt-1 pb-1 m-1 text-center text-white bg-teal-400">Section</div>
@@ -306,10 +307,10 @@
                 <div class="flex flex-row items-center justify-around heading ">
                     <div class="w-full pt-1 pb-1 m-1 text-center text-white bg-slate-400">Test</div>
                     <div class="w-full pt-1 pb-1 m-1 text-center text-white bg-slate-400">20</div>
-                    <div class="subAns w-full pt-1 pb-1 m-1 text-center text-white bg-slate-400">0</div>
-                    <div class="subNotAns w-full pt-1 pb-1 m-1 text-center text-white bg-slate-400">20</div>
-                    <div class="subMarked w-full pt-1 pb-1 m-1 text-center text-white bg-slate-400">0</div>
-                    <div class="subNotVisited w-full pt-1 pb-1 m-1 text-center text-white bg-slate-400">20</div>
+                    <div class="w-full pt-1 pb-1 m-1 text-center text-white subAns bg-slate-400">0</div>
+                    <div class="w-full pt-1 pb-1 m-1 text-center text-white subNotAns bg-slate-400">20</div>
+                    <div class="w-full pt-1 pb-1 m-1 text-center text-white subMarked bg-slate-400">0</div>
+                    <div class="w-full pt-1 pb-1 m-1 text-center text-white subNotVisited bg-slate-400">20</div>
                 </div>
                 <div class="h-24 border-b-[1px] border-black border-solid blankSpace"></div>
                 <div class="flex justify-end buttons ">
@@ -321,6 +322,20 @@
             </div>
         </div>
         </div>
+        <div class="absolute top-0 w-screen h-full subPallete backdrop-blur-sm ">
+
+            <div class="flex justify-center ">
+                <div class="flex flex-col w-8/12 mt-20 bg-teal-100 rounded-lg h-2/6 ">
+                    <div class="m-3 font-serif text-lg text-center submittitle">SCORE </div>
+                <div class="flex items-center justify-center font-serif text-[30px] font-bold ">Marks</div>
+                    <div class="flex justify-end buttons ">
+                        <button onclick="fff()"
+                            class="flex items-center justify-center w-20 h-8 m-3 bg-teal-500">Close</button>
+                    
+                    </div>
+                </div>
+            </div>
+            </div>
 </body>
 <script src="./quiz.js"></script>
 
