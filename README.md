@@ -2,6 +2,10 @@
 
 Quiz-3.0 is a dynamic, responsive, web-based quiz application designed to provide users with an engaging and enjoyable experience. The application is built primarily using HTML (81.9%) and JavaScript (18.1%).
 
+![App Screenshot](./screenshot.png)
+
+
+
 ## Features
 
 - **Interactive Quiz**: Users are guided through a series of questions, with the aim to make the learning process fun and engaging.
